@@ -4,12 +4,11 @@ export type UserCertificate = {
     "id": number,
     "firstName": string,
     "lastName": string,
-    "certificateType": number
+    "typeAlias": string
 }
 
 export type Certificate = {
-    "_id": ObjectId,
-    "type": number,
+    "_id"?: ObjectId,
     "name": string,
     "alias": string,
     "description": string

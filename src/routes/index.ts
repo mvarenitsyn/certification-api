@@ -1,9 +1,9 @@
 import {Router} from "express";
 
-import {certificatesRoute} from "./certificates-route";
+import {certificates} from "./certificates";
 
 export const apiRoutes = Router({})
-const routePath = '/'
 
-apiRoutes.use(routePath, certificatesRoute)
+apiRoutes.use('/certificate', certificates)
+apiRoutes.use('/category', certificates)
 
