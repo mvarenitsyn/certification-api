@@ -6,7 +6,7 @@ import {UniqueAlias, isCertExists} from "../middlewares/validators";
 export const certificates = Router({})
 
 certificates.get('/', (req: Request, res: Response) => {
-    res.sendStatus(200)
+    res.status(200).json('Welcome to Algos')
 })
 
 certificates.get('/:id', isCertExists, async (req: Request, res: Response) => {
