@@ -13,7 +13,7 @@ app.use(bodyParser({extended: true}))
 app.use('/', apiRoutes)
 
 
-const appPort = process.env.SERVER_PORT
+const appPort = process.env.PORT
 
 async function main() {
     app.listen(appPort, () => {
